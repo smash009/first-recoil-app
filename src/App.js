@@ -1,7 +1,18 @@
-import "./App.css";
+import {
+  RecoilRoot,
+  atom,
+  selector,
+  useRecoilState,
+  useRecoilValue,
+} from "recoil";
+import CharacterCounter from "./components/CharacterCounter";
 
 function App() {
-  return <div className="App">app</div>;
+  return (
+    <RecoilRoot>
+      <CharacterCounter />
+    </RecoilRoot>
+  );
 }
 
 export default App;
